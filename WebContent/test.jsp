@@ -11,6 +11,7 @@
 Test
 <s:property value="user.name"/>
 <br/>
+<br/>
 username:<s:property value="#session.username"></s:property>
 <s:debug></s:debug>
 </body>
