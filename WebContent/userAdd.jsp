@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-Test
+Add successfully.
 <s:property value="user.name"/>
 <br/>
 <br/>

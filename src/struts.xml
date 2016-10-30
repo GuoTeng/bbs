@@ -13,8 +13,8 @@
     <package name="user" namespace="/" extends="struts-default">
 <!--     	<default-action-ref name="showcase" /> -->
 		<global-allowed-methods>regex:.*</global-allowed-methods>  
-    	<action name="*_*" class="com.gt.action.{1}Action" method="{2}">
-            <result name="success">/test.jsp</result>
+    	<action name="user_add" class="com.gt.action.UserAction" method="add">
+            <result name="add">/userAdd.jsp</result>
             
         </action>
     </package>

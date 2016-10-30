@@ -5,6 +5,7 @@ import java.util.Map;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.gt.model.User;
+import com.gt.service.UserService;
 import com.opensymphony.xwork2.ActionSupport;
 
 public class UserAction extends ActionSupport implements SessionAware{
@@ -15,10 +16,11 @@ public class UserAction extends ActionSupport implements SessionAware{
 	private static final long serialVersionUID = 1L;
 	private Map<String,Object> session;
 	private User user;
+	UserService userService = new UserService();
 	public String add() {
 		session.put("username", user.getName());
-		System.out.println("____________"+user.getName()+":"+user.getAge());
-		return SUCCESS;
+		userService.add(user);
+		return "add";
 	}
 	public String delete() {
 		System.out.println("____________"+user.getName()+":"+user.getAge());
