@@ -12,6 +12,7 @@ Add successfully.
 <s:property value="user.name"/>
 <br/>
 <br/>
+<!-- 对于ValueStack的取值，StackContext中的需要用# -->
 username:<s:property value="#session.username"></s:property>
 <s:debug></s:debug>
 </body>

@@ -8,13 +8,21 @@
 <struts>
    
     <constant name="struts.devMode" value="true" />
+    <!-- 动态方法调用xxx/user!addUser -->
 	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<constant name="struts.custom.i18n.resources" value="bbs"></constant>
+	
 	
     <package name="user" namespace="/" extends="struts-default">
 <!--     	<default-action-ref name="showcase" /> -->
+		<!-- 通配符的配置 对于{1}的使用 -->
 		<global-allowed-methods>regex:.*</global-allowed-methods>  
     	<action name="user_add" class="com.gt.action.UserAction" method="add">
             <result name="add">/userAdd.jsp</result>
+            
+        </action>
+        <action name="login" class="com.gt.action.LoginAction">
+            <result>/index.jsp</result>
             
         </action>
     </package>

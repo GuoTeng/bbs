@@ -26,14 +26,17 @@ public class UserAction extends ActionSupport implements SessionAware{
 		System.out.println("____________"+user.getName()+":"+user.getAge());
 		return SUCCESS;
 	}
-	public User getUser() {
-		return user;
-	}
+	
 	@Override
 	public void setSession(Map<String, Object> session) {
 		this.session = session;
 		
 	}
+	
+	public User getUser() {
+		return user;
+	}
+	
 	public void setUser(User user) {
 		this.user = user;
 	}
