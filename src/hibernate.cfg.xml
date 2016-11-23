@@ -19,6 +19,6 @@
 		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
 		
 		
-		<mapping resource="com/gt/model/User.hbm.xml"/>
+		<mapping resource="com/gt/bbs/model/User.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

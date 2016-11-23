@@ -17,11 +17,11 @@
 <!--     	<default-action-ref name="showcase" /> -->
 		<!-- 通配符的配置 对于{1}的使用 -->
 		<global-allowed-methods>regex:.*</global-allowed-methods>  
-    	<action name="user_add" class="com.gt.action.UserAction" method="add">
+    	<action name="user_add" class="com.gt.bbs.action.UserAction" method="add">
             <result name="add">/userAdd.jsp</result>
             
         </action>
-        <action name="login" class="com.gt.action.LoginAction">
+        <action name="login" class="com.gt.bbs.action.LoginAction">
             <result>/index.jsp</result>
             
         </action>
